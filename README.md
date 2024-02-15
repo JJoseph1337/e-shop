@@ -1,1 +1,1 @@
-Promise, async, mobx, react-router practising
+Promise, async, mobx, react-router practise
