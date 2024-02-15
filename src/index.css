@@ -91,3 +91,11 @@ textarea:not([rows]) {
 body {
   font-family: "Open Sans", sans-serif;
 }
+
+input:focus {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
