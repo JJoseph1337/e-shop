@@ -1,38 +1,25 @@
 import styles from "./Main.module.css";
+import { Routes, Route, Link } from "react-router-dom";
+import StorePage from "../../pages/store-page/StorePage";
+import MyAccountPage from "../../pages/my-account-page/MyAccountPage";
+import Navigation from "../navigation/Navigation";
 
 const Main = () => {
   return (
     <div className={styles.container}>
-      <nav className={styles.nav}>
-        <ul>
-          <li>Home</li>
-          <li>Account</li>
-          <li>Login</li>
-        </ul>
-      </nav>
+      <Navigation />
 
       <main className={styles.main}>
-        <article>
-          <h2>Title</h2>
-          <img
-            src="https://via.placeholder.com/600/771796"
-            alt="image"
+        <Routes>
+          <Route
+            path="/store"
+            element={<StorePage />}
           />
-        </article>
-        <article>
-          <h2>Title</h2>
-          <img
-            src="https://via.placeholder.com/600/d32776"
-            alt="image"
+          <Route
+            path="/my-account"
+            element={<MyAccountPage />}
           />
-        </article>
-        <article>
-          <h2>Title</h2>
-          <img
-            src="https://via.placeholder.com/600/f66b97"
-            alt="image"
-          />
-        </article>
+        </Routes>
       </main>
     </div>
   );
