@@ -4,6 +4,7 @@ import StorePage from "../../pages/store-page/StorePage";
 import MyAccountPage from "../../pages/my-account-page/MyAccountPage";
 import Navigation from "../navigation/Navigation";
 import LoginModal from "../login-modal/LoginModal";
+import HomePage from "../../pages/home-page/HomePage";
 
 const Main = () => {
   return (
@@ -12,6 +13,10 @@ const Main = () => {
 
       <main className={styles.main}>
         <Routes>
+          <Route
+            path="/"
+            element={<HomePage />}
+          />
           <Route
             path="/store"
             element={<StorePage />}
