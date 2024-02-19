@@ -1,10 +1,13 @@
 import styles from "./Header.module.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <>
       <header className={styles.headerContainer}>
-        <h1>E-shop</h1>
+        <Link to="/">
+          <h1>E-shop</h1>
+        </Link>
         <form action="search">
           <input
             type="text"
