@@ -5,8 +5,10 @@ import MyAccountPage from "../../pages/my-account-page/MyAccountPage";
 import Navigation from "../navigation/Navigation";
 import LoginModal from "../login-modal/LoginModal";
 import HomePage from "../../pages/home-page/HomePage";
+import { useEffect } from "react";
 
 const Main = () => {
+ 
   return (
     <div className={styles.container}>
       <Navigation />
