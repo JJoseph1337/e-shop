@@ -8,7 +8,10 @@ const Header = () => {
         <Link to="/">
           <h1>E-shop</h1>
         </Link>
-        <form action="search">
+        <form
+          action="search"
+          className={styles.form}
+        >
           <input
             type="text"
             placeholder="искать на E-shop"

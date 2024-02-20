@@ -25,7 +25,7 @@
 }
 
 .headerContainer input {
-  border: 2px solid lightblue;
+  border: 2px solid rgb(10, 79, 102);
   border-radius: 8px;
   z-index: 1;
   color: #99a3ae;
@@ -33,13 +33,19 @@
 }
 
 .headerContainer button {
-  background-color: lightblue;
+  background-color: rgb(10, 79, 102);
   border: none;
   border-radius: 8px;
   width: 75px;
   position: relative;
-  right: 15px;
+  right: 11px;
 
   padding-top: 5px;
   padding-left: 15px;
+
+  transition: 0.1s ease;
+}
+
+.form button:hover {
+  background-color: rgb(10, 79, 102, 0.8);
 }
