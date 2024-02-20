@@ -5,12 +5,18 @@ import modal from "../../store/modal";
 const Navigation = () => {
   return (
     <nav className={styles.nav}>
-      <ul>
-        <Link to="/store">Store</Link>
-        <Link to="/my-account">My account</Link>
-        <button onClick={() => modal.toggleModal()}>
-          Login
-        </button>
+      <ul className={styles.navList}>
+        <li>
+          <Link to="/store">Store</Link>
+        </li>
+        <li>
+          <Link to="/my-account">My account</Link>
+        </li>
+        <li>
+          <button onClick={() => modal.toggleModal()}>
+            Login
+          </button>
+        </li>
       </ul>
     </nav>
   );

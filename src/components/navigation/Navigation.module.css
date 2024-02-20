@@ -1,8 +1,20 @@
 .nav ul {
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 
-.nav button {
-  all: unset;
+.navList li {
+  font-size: 18px;
+}
+
+.navList li:hover {
+  color: rgb(10, 79, 102, 0.8);
+}
+
+.navList button {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
 }

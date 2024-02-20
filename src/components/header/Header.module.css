@@ -36,13 +36,11 @@
   background-color: rgb(10, 79, 102);
   border: none;
   border-radius: 8px;
-  width: 75px;
+  width: 65px;
   position: relative;
-  right: 11px;
-
+  right: 12px;
   padding-top: 5px;
-  padding-left: 15px;
-
+  padding-left: 26px;
   transition: 0.1s ease;
 }
 
