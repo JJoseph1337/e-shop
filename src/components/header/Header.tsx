@@ -1,7 +1,10 @@
+import { useState } from "react";
 import styles from "./Header.module.css";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  const [searchValue, setSearchValue] = useState("");
+
   return (
     <>
       <header className={styles.headerContainer}>
@@ -9,10 +12,15 @@ const Header = () => {
           <h1>E-shop</h1>
         </Link>
         <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            console.log(searchValue);
+          }}
           action="search"
-          className={styles.form}
+          className={styles.searchForm}
         >
           <input
+            onChange={(e) => setSearchValue(e.target.value)}
             type="text"
             placeholder="искать на E-shop"
           />

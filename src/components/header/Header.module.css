@@ -44,6 +44,6 @@
   transition: 0.1s ease;
 }
 
-.form button:hover {
+.searchForm button:hover {
   background-color: rgb(10, 79, 102, 0.8);
 }
